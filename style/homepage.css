@@ -632,7 +632,7 @@ form{
 		min-height: 600px;
 	}
 	#meet-adia {
-	    background-position: center;
+	    background-position: 75%;
 	    background-size: cover;
 	}
 	#meet-adia-title {
@@ -1206,13 +1206,16 @@ form{
 	}
 	.black-bar-text {
 		width: 90%;
-	    flex-direction: column;
+	    /*flex-direction: column;*/
+	    display: block;
+	    margin:auto;
 	}
 	.logo-container {
 	    width: 100%;
 	}
 	.black-bar-text > input {
-	    margin-left: 0; 
+	    margin: 10px 50px;
+    	display: inline-block;
 	}
 	.photo-container{
 		width: 100%;
@@ -1306,8 +1309,25 @@ form{
 	    margin-top: 10px;
 	    text-align: center;
 	}
+	.form-container{
+		width: 90%;
+    	margin: auto;
+    	padding:0;
+	}
+	.img-publish,.img-test, .img-code {
+	    padding-top: 50px;
+	}
 }
 @media only screen and (max-width: 399px){
+	.black-bar-text {
+		width: 90%;
+	    flex-direction: column;
+	    display: flex;
+	}
+	.black-bar-text > input {
+		    margin: 0;
+	    margin-left: 0; 
+	}
 	#flexible-text {
 	    top: 74%;
 	    font-size: unset;
